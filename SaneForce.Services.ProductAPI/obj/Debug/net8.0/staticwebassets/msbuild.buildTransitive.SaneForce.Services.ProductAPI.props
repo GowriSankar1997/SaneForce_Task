@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\SaneForce.Services.ProductAPI.props" />
+</Project>

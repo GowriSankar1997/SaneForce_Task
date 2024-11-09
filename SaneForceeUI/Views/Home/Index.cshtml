@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/Main.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SaneForceeUI.styles.css" asp-append-version="true" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/Main.js"></script>
+</head>
+<body>
+
+    <div class="container" id="productTable">
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Qty</th>
+                    <th>Rate</th>
+                    <th>Tax Percentage</th>
+                    <th>Tax Amount</th>
+                    <th>Gross Total</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="productRows">
+            </tbody>
+        </table>
+        <button onclick="addRow()">+ Add Product</button>
+        <button onclick="saveData()">Save</button>
+    </div>
+</body>
+</html>
+
+
+
+
